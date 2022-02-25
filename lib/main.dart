@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SimpleStateManager(
-      data: SimpleStateManagerData(DummyRepository()),
+      data: SimpleStateManagerData(DummyApiRepository()),
       child: MaterialApp(
         title: 'Key Svg Demo',
         theme: ThemeData(

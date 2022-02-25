@@ -5,6 +5,7 @@ import 'package:testing_app_book_svg_office/screens/room_detail_screen.dart';
 import 'package:testing_app_book_svg_office/screens/rooms_screen.dart';
 import 'package:testing_app_book_svg_office/state/simple_state.dart';
 
+// for simplicity I just build nested navigation for room stack
 final List<Widget> _navigationStacks = [
   Navigator(
     initialRoute: '/',
@@ -17,10 +18,10 @@ final List<Widget> _navigationStacks = [
                 ));
       }
 
-      return MaterialPageRoute(builder: (c) => RoomsScreen());
+      return MaterialPageRoute(builder: (c) => const RoomsScreen());
     },
   ),
-  HistoryScreen(),
+  const HistoryScreen(),
 ];
 
 class BottomTabNavigation extends StatefulWidget {

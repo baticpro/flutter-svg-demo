@@ -1,12 +1,14 @@
+import 'package:flutter/material.dart';
+
 class RoomPaintModel {
   final String path;
-  final String fill;
+  final Color color;
 
-  RoomPaintModel(this.path, this.fill);
+  RoomPaintModel(this.path, this.color);
 }
 
 class RoomPaintWorkspace extends RoomPaintModel {
   final String id;
 
-  RoomPaintWorkspace(String path, String fill, this.id) : super(path, fill);
+  RoomPaintWorkspace(String path, Color color, this.id) : super(path, color);
 }

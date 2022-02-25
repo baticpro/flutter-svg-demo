@@ -3,7 +3,7 @@ import 'package:testing_app_book_svg_office/models/room_model.dart';
 import 'package:testing_app_book_svg_office/models/workplace_model.dart';
 
 // simulate api requests
-class DummyRepository {
+class DummyApiRepository {
   final List<WorkplaceModel> _workPlaces = [
     const WorkplaceModel(isBooked: true, id: '001'),
     const WorkplaceModel(isBooked: false, id: '002'),
